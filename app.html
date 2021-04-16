@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata mosquito</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    
+    <script  type="text/javaScript" src="jogo.js"> </script>
+</head>
+<body  ajustaTamanho() >
+    <div class="painel">
+        <div class="life">
+            <img id="l1"src="imagens/coracao_cheio.png">
+            <img id="l2"src="imagens/coracao_cheio.png">
+            <img id="l3"src="imagens/coracao_cheio.png">
+        </div>
+        <div class="cronometro"> Tempo restante: <span id="cronometro"></span> 
+
+        </div>
+    </div>
+    <script>
+        document.getElementById('cronometro').innerHTML = tmp
+
+       var criaMosca = setInterval(function() {posicaoRandomica()},criaMoscaTempo)
+    </script>
+</body>
+</html>
